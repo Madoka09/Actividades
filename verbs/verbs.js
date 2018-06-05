@@ -10,11 +10,11 @@ app.post('/',function(request,response){
 });
 
 app.put('/',function(request,response){
-    response.send('Usaste PUT');
+    response.status(400).send('Hiku');
 });
 
 app.delete('/',function(request,response){
-    response.send('Usaste DELETE');
+    response.status(500).send('Ejelejuej');
 });
 
 app.listen(3000);

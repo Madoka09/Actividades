@@ -18,7 +18,7 @@ apiv2.get("/numeros/:min/:max",function(request,response){
     }
     var result = Math.round((Math.random()*(max-min))+min);
     response.set("Content-Type","text/html");
-    response.send("<h1> ESTA ES LA APIV2 D< </h1><h2>El numero es: "+ result);
+    response.send("<h1> ESTA ES LA APIV2 D< </h1><h2>El numero es: "+ result + "</h2>");
 });
 
 module.exports = apiv2;

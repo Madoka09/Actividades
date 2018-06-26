@@ -24,6 +24,17 @@ router.get("/",(req,res,next)=>{
     });
 });
 
+router.get("/login",(req,res)=>{
+    res.render("login");
+});
+
+router.post("/login",passport.authenticate("login",{
+    successRedirect:"/",
+    failureRedirect:"/login",
+    failureFlash:true
+}));
+
+
 router.get("/signup",(req,res,next)=>{
     res.render('signup');
 });

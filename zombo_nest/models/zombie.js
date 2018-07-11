@@ -7,7 +7,8 @@ var zombieSchema = mongoose.Schema({
     username: {type: String, required: true, unique: true},
     password: {type: String, required: true},
     createdAt: {type: Date, default: Date.now},
-    displayName: {type: String},
+    displayName: String,
+    role: String,
     bio: String
 });
 

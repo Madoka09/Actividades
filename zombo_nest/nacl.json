@@ -36,11 +36,18 @@
 },
 {
     "group":"zombie-queen",
-    "permissions":[{
+    "permissions":[
+    {
+        "resource": "/edit",
+        "methods": ["GET","POST"],
+        "action": "allow"
+    },
+    {
         "resource": "*",
         "methods": ["GET"],
         "action": "allow"
-    }]
+    }
+    ]
 },
 {
     "group": "zombie-boss",
@@ -51,6 +58,26 @@
     },
     {
         "resource": "/addweapon",
+        "methods": ["GET","POST"],
+        "action": "allow"
+    },
+    {
+        "resource": "/edit",
+        "methods": ["GET","POST"],
+        "action": "allow"
+    },
+    {
+        "resource": "/logout",
+        "methods": ["GET"],
+        "action": "allow"
+    },
+    {
+        "resource": "/profile",
+        "methods": ["GET"],
+        "action": "allow"
+    },
+    {
+        "resource": "/signup",
         "methods": ["GET","POST"],
         "action": "allow"
     }]   
